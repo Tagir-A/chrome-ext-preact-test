@@ -1,0 +1,37 @@
+{
+  "name": "chrome-ext-preact-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "rm -rf dist && webpack && npm run copy:dist",
+    "copy:dist": "cp ./src/popup.html manifest.json ./dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tagir-A/chrome-ext-preact-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tagir-A/chrome-ext-preact-test/issues"
+  },
+  "homepage": "https://github.com/Tagir-A/chrome-ext-preact-test#readme",
+  "dependencies": {
+    "preact": "^10.7.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.10",
+    "@babel/plugin-transform-react-jsx": "^7.17.3",
+    "@babel/preset-env": "^7.17.10",
+    "babel-loader": "^8.2.5",
+    "css-loader": "^6.7.1",
+    "node-sass": "^7.0.1",
+    "resolve-url-loader": "^5.0.0",
+    "sass-loader": "^12.6.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2"
+  }
+}
